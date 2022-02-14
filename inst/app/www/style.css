@@ -1,0 +1,82 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+body {
+
+  font-size: 19px;
+  margin: 0px !important;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+
+.container-about-app {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "app-col1 app-col2 app-col3"
+
+}
+
+.container-gallery {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 50px;
+    align-content: center;
+    max-width: 1300px;
+    width: 100%;
+
+}
+
+.container-fun {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  column-gap: 50px;
+}
+
+.about-me, #typed, .typed-cursor {
+  color: #fff;
+  font-family: 'IBM Plex Mono';
+}
+
+.section {
+  padding: 50px;
+}
+
+.card {
+  border-radius: 11px !important;
+  width: 350px !important;
+}
+
+.image-card:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#section1 {
+  background-image: url("gems-clips.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
